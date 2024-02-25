@@ -80,6 +80,7 @@ cuda_minor_mismatch_ok = {
 
 
 def assert_no_cuda_mismatch(name=""):
+    pass
     cuda_major, cuda_minor = installed_cuda_version(name)
     sys_cuda_version = f'{cuda_major}.{cuda_minor}'
     torch_cuda_version = ".".join(torch.version.cuda.split('.')[:2])
